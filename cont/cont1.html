@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - The Persistence of Memory</title>
+  <link rel="stylesheet" href="./style_cont1.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+    <div class="frontFace">
+        <div class="frontFace-container">
+            <div class="frontContent">
+                <div class="frontContent-sentence">
+                    <div class="frontContent-title">
+                        <p class="frontContent-title-main">Que es la ecologia</p>
+                        <p class="frontContent-text">
+                            La ecología es una rama de la biología en la que se estudian y analizan las interacciones entre los seres vivos con el hábitat donde se encuentran, es decir, las relaciones que existen entre los factores bióticos (relaciones entre seres vivos) y los factores abióticos (condiciones ambientales).
+
+                            Etimológicamente, la palabra ecología deriva del griego ökologie compuesta de la unión de los vocablos griegos oikos, que significa ‘casa’, ‘hogar’ o ‘vivienda’, y logos, que significa ‘estudio’ o ‘tratado’. En este sentido, ecología significa ‘el estudio del hogar’
+                            
+                            Fue Ernst Haeckel, científico alemán, quien creó el término ecología en el año 1869 con el fin de designar un nombre a la ciencia que estudia las relaciones entre los seres vivos y el medio ambiente.
+                            
+                            </p>
+                    </div>
+                    <div class="frontContent-img">
+                        <img src="img.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="buttonFrame">
+                    <button class="button-menu">
+                        <div class="button-open">
+                            <p class="click">Mas info</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backFace">
+        <div class="backFace-container">
+            <div class="backFace-area">
+              <p class="backFace-text">
+                Por tanto, el objeto de estudio de la ecología está en determinar cómo los factores abióticos (humedad, temperatura, entre otros) interactúan con los factores bióticos (relación entre la gran diversidad de seres vivos que se encuentran en un mismo hábitat).
+<br>
+                De allí que la ecología haga caso particular a cómo las características particulares de un hábitat influyen en el desarrollo, modificación y comportamiento de las diferentes especies.
+                <br>
+                En este sentido, el concepto de ecología humana se refiere al estudio científico de las relaciones entre los seres humanos y el medio ambiente, incluyendo las condiciones naturales, las interacciones y los aspectos económicos, psicológicos, sociales y culturales. Por tanto, la ecología se enfoca en estudiar los ecosistemas o poblaciones en general..
+            
+            </p>
+              <div class="buttonFrame close">
+                  <button class="button-menu">
+                      <div class="button-close">
+                          <p class="click">Regresar</p>
+                      </div>
+                  </button>
+              </div>
+            </div>
+            <div class="clock-container" id="container">
+                <div class="image-container">
+                    <div class="c1">
+                        <img class="clock img01" src="https://drive.google.com/uc?export=view&id=1WWozan_0IPGIIQAomC9cko4UO40wGQrD" alt="">
+                    </div>
+                    <div class="c2">
+                        <img class="clock img02" src="https://drive.google.com/uc?export=view&id=1XjZCcdCkm1TwKzw7Mc02nYH2rwiBGFuS" alt="">
+                    </div>
+                    <div class="c3">
+                        <img class="clock img03" src="https://drive.google.com/uc?export=view&id=19Re2CmsxZUUztZeGlKCaPQCLI4-cVDed" alt="">
+                    </div>
+                </div>
+                <div class="c4">
+                    <img class="typo img04" src="https://drive.google.com/uc?export=view&id=1kNaJI8nWnKpZSRa86YA6BzokGMrZYTPn" alt="">
+                </div>
+                <div class="c5">
+                    <img class="typo img05" src="https://drive.google.com/uc?export=view&id=1kNaJI8nWnKpZSRa86YA6BzokGMrZYTPn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="overlay-path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+    </svg>
+</main>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" id="turbulence" baseFrequency="0.002" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="400" />
+    </filter>
+    <filter id="contrast">
+      <feColorMatrix in="SourceGraphic" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -10" result="matrix" />
+      <feComposite in="SourceGraphic" in2="matrix" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="./script_cont1.js"></script>
+
+</body>
+</html>
